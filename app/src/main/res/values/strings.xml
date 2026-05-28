@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Crud App</string>
+    <string name="crud_logo">crud_logo</string>
+    <string name="login">LOGIN</string>
+    <string name="dont_have_an_account_please">Dont\' have an account? Please</string>
+    <string name="register">Register</string>
+    <string name="register_bottom"><u>Register</u></string>
+    <string name="log_in">Log in</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="password_field">password field</string>
+    <string name="register_uppercase">REGISTER</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="have_an_account_please">Have an account? Please</string>
+    <string name="login_bottom"><u>Login</u></string>
+    <string name="home">Home</string>
+    <string name="add_jobs">Add Jobs</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="saved">Saved</string>
+    <string name="profile">Profile</string>
+    <string name="full_time">Full-time</string>
+    <string name="salary">Salary</string>
+    <string name="type_of_employment">Type of Employment</string>
+    <string name="project_manager">Project Manager</string>
+    <string name="job_title">Job Title</string>
+    <string name="add_a_job">Add a Job</string>
+    <string name="go_back">Go Back</string>
+    <string name="_20k_30k">20k - 30k</string>
+    <string name="location">Location</string>
+    <string name="colombo">Colombo</string>
+    <string name="add_job">Add Job</string>
+    <string name="hamburger_menu">Hamburger Menu</string>
+    <string name="hello_jane">Hello Jane 👋</string>
+    <string name="let_s_find_your_dream_job">Let\'s find your dream job</string>
+    <string name="search_jobs">Search jobs...</string>
+    <string name="user_image">User Image</string>
+    <string name="edit_button">Edit Button</string>
+    <string-array name="employment_values_array">
+        <item>Full-time</item>
+        <item>Part-time</item>
+        <item>Contract</item>
+    </string-array>
+</resources>
