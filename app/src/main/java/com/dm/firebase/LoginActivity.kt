@@ -9,10 +9,8 @@ import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.Firebase
@@ -25,6 +23,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
 
@@ -71,12 +70,6 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
-        // Navigate to Register Activity if they don't have an account
-        loginButton.setOnClickListener {
-            startActivity(Intent(this, RegisterActivity::class.java))
-            finish()
-        }
-
         registerLink.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
             finish()
@@ -107,7 +100,7 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        // Pro-Tip: Auto-login check. If user is already authenticated, skip login!
+        // If user is already authenticated, skip login!
         if (auth.currentUser != null) {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
